@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "383484477995",
+    "firebase_url": "https://secret-project-007.firebaseio.com",
+    "project_id": "secret-project-007",
+    "storage_bucket": "secret-project-007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383484477995:android:6139cc9d1cce14cf",
+        "android_client_info": {
+          "package_name": "com.notasecretproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383484477995-pta0nd3f29mpg7jrj51355t9vju366pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLxnQ9SmOBhxq0MThJTi0DOePtzoxU5II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383484477995-pta0nd3f29mpg7jrj51355t9vju366pd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "383484477995-qvb69r21jf5a5mug3c7113j46kc5vjec.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quanghuynh.notasecretproject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

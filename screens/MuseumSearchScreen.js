@@ -23,15 +23,14 @@ export default class MuseumSearchScreen extends React.PureComponent {
             museums: [],
         })
         this.ref = firebase.firestore().collection('museums')
-        this.unsubscribe = null
     }
 
     componentDidMount() {
-        this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate) 
+        this.ref.onSnapshot(this.onCollectionUpdate) 
     }
     
     componentWillUnmount() {
-        this.unsubscribe()
+
     }
 
     onCollectionUpdate = (querySnapshot) => {
@@ -56,12 +55,11 @@ export default class MuseumSearchScreen extends React.PureComponent {
     
     updateSearch = search => {
         this.setState({ search });
-        this.unsubscribe = null
         if (search.length == 0) {
-            this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate) 
+            this.ref.onSnapshot(this.onCollectionUpdate) 
         } else {
             var museums = this.ref.where('keywords', 'array-contains', search.toLowerCase())
-            this.unsubscribe = museums.onSnapshot(this.onCollectionUpdate)
+            museums.onSnapshot(this.onCollectionUpdate)
         }
         
     };
